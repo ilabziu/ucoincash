@@ -19,6 +19,10 @@
 		   	$source = "verifyemail";					
             break;
 			
+			case 'resetpass':			
+		   	$template = "resetpass";					
+            break;
+			
 			case 'package':			
 		   	$template = "package";					
             break;
