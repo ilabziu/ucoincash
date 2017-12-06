@@ -82,7 +82,7 @@
 											</p><br>
 											
 											<p style="text-align:center">
-												<a href="http://localhost/ucoincash/account/verifyemail/'.$token.'.html" style="background-color:#ffba00;color:#ffffff;padding:8px 15px;border-radius:3px;text-decoration:none" target="_blank" >
+												<a href="http://localhost/ucoincash/account/resetpass/'.$token.'.html" style="background-color:#ffba00;color:#ffffff;padding:8px 15px;border-radius:3px;text-decoration:none" target="_blank" >
 												  Reset Your Password
 												</a>
 											</p><br>
