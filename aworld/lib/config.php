@@ -5,7 +5,7 @@ $config_url=$_SERVER["SERVER_NAME"]."/ucoincash";
 $config['database']['servername'] = 'localhost';
 $config['database']['username'] = 'root';
 $config['database']['password'] = '';
-$config['database']['database'] = 'ucoincash';
+$config['database']['database'] = 'henmex';
 $config['database']['refix'] = 'table_';
 
 ?>

@@ -168,7 +168,51 @@ jQuery(document).ready(function(){
             </div>
         </div>
     </div>
-   
+    <style>
+        img.img-responsive.close-button {
+            position: absolute;
+            right: 15px;
+            cursor: pointer;
+        }
+
+        img.img-responsive.left-banner {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        img.img-responsive.right-banner {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .div-content {
+            padding: 40px;
+            text-align: justify;
+            position: relative;
+            z-index: 1500;
+        }
+
+        @media(max-width:768px) {
+            .div-content {
+                padding: 20px;
+            }
+        }
+        @media screen and (max-width: 700px)
+{
+.flip-clock-wrapper {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 3em 0px!important;
+    padding-left: 20px!important;
+}
+}
+    </style>
+
+        
+    <?php include _template."popup_tpl.php";?> 
     <!-- / footer  -->
 <?php }?>
 

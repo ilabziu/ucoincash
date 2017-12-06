@@ -104,10 +104,10 @@ body{
    opacity: 0;
 }
 .effect-roadmap-left{
-	animation: fadeleft 0.5s forwards;
+	animation: fadeleft 1.5s forwards;
 }
 .effect-roadmap-right{
-	animation: faderight 0.5s forwards;
+	animation: faderight 1.5s forwards;
 }
 /* #roadmap li:nth-child(1){
 	animation-delay: 0.2s;
@@ -142,6 +142,33 @@ body{
 }
 .hide-to-left{
 	animation: HideLeft 0.8s forwards;
+}
+.hide-pop-up{
+	animation: HidePopUp 0.5s forwards;
+}
+@-webkit-keyframes HidePopUp{
+	0%{
+        transform: translateY(0px);
+        opacity: 1;
+	}
+	100%{
+         transform: translateY(-200px);
+        opacity: 0;
+        display: none;
+	}
+}
+.show-pop-up{
+	animation: ShowPopUp 0.7s forwards;
+}
+@-webkit-keyframes ShowPopUp{
+	0%{
+        transform: translateY(-200px);
+        opacity: 0;
+	}
+	100%{
+         transform: translateY(0px);
+        opacity: 1;
+	}
 }
 
 
