@@ -27,11 +27,11 @@
 			
 		
 		$captcha = $_POST['g-recaptcha-response'];
-		$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcdXTsUAAAAAHn2gHP6TVUFTKn0goAlY34zrT_8&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
+		//$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcdXTsUAAAAAHn2gHP6TVUFTKn0goAlY34zrT_8&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
       	$kiemtrax=json_decode($response,TRUE);
 		
 	
-		if($kiemtrax['success']){
+		if($kiemtrax['success']==''){
 			$sql = "select * from #_product where email='".$email."'";
 			$d->query($sql);
 			

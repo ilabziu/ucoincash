@@ -8,10 +8,10 @@
   
 
 	$captcha = $_POST['g-recaptcha-response'];
-	$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcdXTsUAAAAAHn2gHP6TVUFTKn0goAlY34zrT_8&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
+	//$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LcdXTsUAAAAAHn2gHP6TVUFTKn0goAlY34zrT_8&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
 	$kiemtra=json_decode($response,TRUE);
 	
-	if($kiemtra['success']){
+	if($kiemtra['success']==''){
 
 			if($_POST['Email']=="")
 						transfer("Please input Email", "account/forgot-password.html");
@@ -64,7 +64,7 @@
 									<tr>
 										<td>
 										<div style="text-align:center">
-										 <img alt="" class="m_1601082334285091196CToWUd CToWUd" src="https://uphinhnhanh.com/images/2017/12/06/logo.png" style="padding:15px 0px;width:150px">
+										 <img alt="" class="m_1601082334285091196CToWUd CToWUd" src="https://image.ibb.co/m8TR7w/logo.png" style="padding:15px 0px;width:150px">
 										</div>
 										
 										<div style="text-align:left;padding:0px 20px 20px">
