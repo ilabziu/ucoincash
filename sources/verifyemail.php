@@ -1,7 +1,7 @@
 <?php  if(!defined('_source')) die("Error");
 
-        $token = addslashes($_GET['tam']);
-		
+        $token = trim(strip_tags(addslashes($_GET['tam'])));
+ 
 			
 		$data['xacthucmail'] =1;
 				

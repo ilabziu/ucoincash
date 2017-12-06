@@ -2,12 +2,26 @@
 
  unset($_SESSION['login']['id']);			
  unset($_SESSION['login']['user']);
+ $token = trim(strip_tags(addslashes($_GET['token'])));
+ 
+ $_SESSION['login']['reset'] = $token;
+ 
+    $sqluserx= "select * from table_forgetpass where token='".$_SESSION['login']['reset']."' order by id desc";
+	$d->query($sqluserx);		
+	$kquserx = $d->result_array();
+	
+	$thoigian=time()-$kquser[0]['ngaytao'];
+	
+	if($kquser[0]['reset']==1 || $thoigian > 600)
+	transfer("Token expired ", "account/forgot-password.html");	
+	
+			
 
 ?>
 
 <div class="text-center" id="div-binding-container">
         <h4 class="h4-title">
-            <span>Welcome</span> <span class="span-title-color">back!</span>
+            <span>Reset</span> <span class="span-title-color">Password</span>
         </h4>
         <div class="div-signin-container" data-bind="with: Access">
             <div class="content">
@@ -16,9 +30,9 @@
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">
-                        <img class="sign-ico" src="images/email-ico.png">
+                       <img class="sign-ico" src="images/pass-ico.png">
                     </span>
-                    <input type="text" id="input-sign-username" name="Email" placeholder="Email" data-bind="event: { &#39;change&#39;: $root.CheckUsername }"  value="" class="form-control">
+                    <input type="password" name="Password" data-bind="event: { 'change': $root.ValidatePassword }" placeholder="New Password" class="form-control">
 
                 </div>
                 <div class="div-msg-warn-item">
@@ -28,8 +42,8 @@
                     <span class="input-group-addon">
                         <img class="sign-ico" src="images/pass-ico.png">
                     </span>
-                    <input type="password" id="input-sign-password" name="Password" data-bind="event: { &#39;change&#39;: $root.CheckPassword }" placeholder="Password" class="form-control">
-
+                   <input type="password" name="ConfirmPassword" data-bind="event: { 'change': $root.ValidateConfirmPass }" placeholder="Confirm New Password" class="form-control">
+                
                 </div>
                 <!-- ko if: setAuthy()==1 --><!-- /ko -->
                 <div class="div-msg-warn-item">
@@ -44,17 +58,10 @@
 
             </div>
             <div class="footer text-center">
-                <button class="btn btn-success" data-bind="click: $root.Login" id="btn-signin">Sign In
-                 <img src="images/arrow-right.png">
+                <button class="btn btn-success" data-bind="click: $root.Reset" id="btn-signin">Reset Password
+                 <img src="images/arrow-right.png"> 
                 </button>
-                <div class="div-forgot-password">
-                    <span>Don't have an account?</span>
-                    <a href="account/sign-up.html" class="sign-up-color" >Sign Up</a> 
-                </div>
-                <div class="div-register-user-action">
-                    <a href="account/forgot-password.html">Forgot your password?</a>
-                    <!--<a href="account/resend-email.html">Resend confirmation email</a>-->
-                </div>
+                
                 
             </div>
         </div>
