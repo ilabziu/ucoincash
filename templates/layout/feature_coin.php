@@ -14,7 +14,7 @@
 </div>
 <div class="right_text_about">
 <h2>BITBANK COIN – The opportunity</h2>
-<p>Bitcoin, Ethereum and BitBankCoin are nearly same in the world crypto currency. The only difference is the price's opportunity. To have one Bitcoin or Ethereum, you need more than <span class="price_btc_usd" style=" color: #3C4858; ">9,000</span> USD and more than <span class="price_btc_usd" style=" color: #3C4858; ">410</span> USD to own it, while BitBankCoin is still cheap at this time. this is a big chance to have more BitBankcoins.</p>
+<p>Bitcoin, Ethereum and BitBankCoin are nearly same in the world crypto currency. The only difference is the price's opportunity. To have one Bitcoin or Ethereum, you need more than <span class="price_btc_usd" style=" color: #3C4858; ">11,000</span> USD and more than <span class="price_btc_usd" style=" color: #3C4858; ">450</span> USD to own it, while BitBankCoin is still cheap at this time. this is a big chance to have more BitBankcoins.</p>
 </div>
 </div>
 <div class="col-md-6 right_text_about">
