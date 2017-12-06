@@ -150,11 +150,12 @@ body{
 	0%{
         transform: translateY(0px);
         opacity: 1;
+        visibility: visible;
 	}
 	100%{
          transform: translateY(-200px);
         opacity: 0;
-        display: none;
+        visibility: hidden;
 	}
 }
 .show-pop-up{
@@ -164,11 +165,12 @@ body{
 	0%{
         transform: translateY(-200px);
         opacity: 0;
+        visibility: hidden;
 	}
 	100%{
          transform: translateY(0px);
         opacity: 1;
+        visibility:visible;
 	}
 }
-
 

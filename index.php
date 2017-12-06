@@ -209,6 +209,23 @@ jQuery(document).ready(function(){
     padding-left: 20px!important;
 }
 }
+/*====response menu====*/
+.navbar-nav {
+    margin: 0;
+}
+@media (min-width: 768px){
+  .navbar-nav {
+    margin:7.5px -15px;
+}
+}
+@media (max-width: 767px)
+{
+  .navbar {
+    background-color: rgba(59,59,59,0.9);
+}
+}
+
+
     </style>
 
         

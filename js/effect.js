@@ -1,6 +1,6 @@
 $(function(){
    $("nav#nav-menu--push-left").addClass('show-to-right');
-   $("#modal-pop-up").addClass('show-pop-up');
+   $("#modal-pop-up").addClass('show-pop-up').css("display","block");
    $(window).scroll(function(event) {
       //position body
       var pos_body=$('body').scrollTop();
@@ -173,7 +173,7 @@ $(function(){
     indexLabelFontSize: 17,
     toolTipContent: "<b>{label}</b>  (#percent%)",
     dataPoints: [
-      { y: 10},{ y: 60},{ y: 15},{ y: 10},{ y: 5}
+      { y: 300},{ y: 2000},{ y: 4500},{ y: 3000},{ y: 200}
       
     ]
   }]
@@ -207,15 +207,20 @@ $(function(){
     });
     // xu ly dong close pop up
     $(".img-responsive.close-button").click(function(event) {
-      /* $("#modal-pop-up").removeClass('in').css("display","none");*/
+       /*$("#modal-pop-up").css("display","block");*/
        $("#modal-pop-up").removeClass("show-pop-up").addClass('hide-pop-up');
         $(".modal-backdrop.fade.in").remove();
+       // $("#modal-pop-up").css("display","none");
 
     });
-    $(".navbar-toggle").click(function(event) {
+    /*$(".navbar-toggle").click(function(event) {
       (".navbar-collapse.collapse").toggleClass('in');
       (".navbar-collapse.collapse").toggleClass('out');
+    });*/
+    $("button.navbar-toggle").click(function(event) {
+     $(".navbar-collapse.collapse").slideToggle("slow")
     });
+   
 
 
 });

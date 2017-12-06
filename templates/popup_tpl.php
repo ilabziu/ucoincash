@@ -1,4 +1,4 @@
- <div class="modal fade in" id="modal-pop-up" role="dialog" style="display: block;opacity: 0;">
+ <div class="modal fade in" id="modal-pop-up" role="dialog" style="display: none;opacity: 0;">
      <div class="modal-dialog">
             <div class="modal-content">
                             <div class="modal-body">
