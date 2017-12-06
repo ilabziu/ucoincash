@@ -1,6 +1,6 @@
 <HTML>
 <HEAD>
-<TITLE>:: NOTIFICATION ::</TITLE>
+<TITLE>++TRANSITION++</TITLE>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 </HEAD>
@@ -8,9 +8,10 @@
 <br/><br/><br/>
 
   <center>
-		<b style="color:#09F; font-size:22px;"><?=$showtext?></b><br>
-        <br>===============================================<br>
-        <a href="<?=$page_transfer?>"><input type="button" value="OK"  style="padding:8px 40px; background:#f00; color:#fff; cursor:pointer"/></a>
+        <img src="./images/logo.png" width="60" /><br><br>
+		<b style="color:#f00; font-size:18px;"><?=$showtext?></b><br>
+        <br>---------------------------------------------------<br>
+        <a href="<?=$page_transfer?>"><input type="button" value="OK"  style="padding:5px 25px; background:#2196f3; color:#fff; cursor:pointer"/></a>
 
   </center>
 </BODY>
