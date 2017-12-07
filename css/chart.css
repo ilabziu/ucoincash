@@ -224,3 +224,87 @@ a.canvasjs-chart-credit{opacity: 0;}
 .item.purple .bar:before{background-color:#A0F}
 .item.lime .bar:before{background-color:#90ee90}
 a.canvasjs-chart-credit{opacity: 0;}
+/*=======our team=======*/
+div.section .ourteam{
+    margin:0 auto;
+    max-width: 1100px;
+}
+div.section .ourteam>h2:before {
+    content: '';
+    background-color: #CDE3FB;
+    height: 2px;
+    width: 60px;
+    border-radius: 1px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+div.section .ourteam .col-4{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+div.section .ourteam>h2{
+    font-size: 24px;
+    margin-bottom: 110px;
+    position: relative;
+}
+div.section .ourteam .col-4 .img img{
+    border-radius: 50%;
+    width: 199px;
+    height: 200px;
+}
+
+
+
+     
+@media only screen and (max-width: 1100px){
+    div.section.advisors {
+    padding-left: 30px;
+    padding-right: 30px;
+   }
+   body .advisors .col-4 {margin-bottom: 70px; width: 50%;}
+}
+@media only screen and (max-width: 600px){
+    body .ourteam .col-4 {margin-bottom: 30px!important;width: 100%; float: none;padding-left: 30px;  padding-right: 30px; }
+    body .advisors .col-4 h3 { padding-left: 0;}
+}
+@media only screen and (max-width: 440px)
+{
+      
+        .inner>h2 {
+            font-size: 18px;
+        }
+        body .advisors .col-4 h3 {
+            padding-left: 90px;
+        }
+         .row .col-4 {width: 100%;float: none;}
+    body .advisors .col-4 h3 { padding-left: 0;}
+        
+}
+.footer{
+    max-width: 1100px;
+    margin:0 auto;
+    text-align: center;
+}
+.list-inline-item:not(:last-child) {
+    margin-right: 5px;
+}
+.list-inline-item {
+    display: inline-block;
+}
+ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #212529; }
+    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+      background-color: #fed136; }

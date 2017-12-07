@@ -1,13 +1,14 @@
 $(function(){
    $("nav#nav-menu--push-left").addClass('show-to-right');
+   $(".pie-chart").addClass('show-chart');
    $("#modal-pop-up").addClass('show-pop-up').css("display","block");
    $(window).scroll(function(event) {
       //position body
       var pos_body=$('body').scrollTop();
       //scroll to col-md-6 text_about
       var pos_text_about=$(".col-md-6.text_about").offset().top;
-      pos_text_about=pos_text_about-73;
-      //console.log(pos_body+"/"+pos_text_about);
+      pos_text_about=pos_text_about-408;
+      //console.log("body="+pos_body+"/text-="+pos_text_about);
       if(pos_body>=pos_text_about){
          $(".col-md-6.text_about").addClass("effect-text-about");
          $(".col-md-6.right_text_about").addClass("effect-right-text-about");
@@ -16,8 +17,9 @@ $(function(){
   }
   //scroll to bonus
   var pos_bonus=$("#ico").offset().top;
-   pos_bonus=pos_bonus-180;
-      //console.log(pos_body+"/"+pos_bonus);
+  // console.log(pos_body+"/"+pos_bonus);
+   pos_bonus=pos_bonus-445;
+     
      if(pos_body>=pos_bonus){
          $(".bonus").addClass("zoom-in");
          //$(".col-md-6.right_text_about").addClass("effect-right-text-about");
@@ -27,41 +29,85 @@ $(function(){
 
  //scroll to roadmap
   var pos_roadmap=$("#roadmap").offset().top;
-   pos_roadmap=pos_roadmap-101;
-   var p=1310;
-   //var child=1;
-     // console.log(pos_body+"/"+pos_roadmap);
-     /*if(pos_body>=pos_roadmap){
-         $("#roadmap li:nth-child(2n-1)").addClass("effect-roadmap-left");
-         $("#roadmap li:nth-child(2n)").addClass("effect-roadmap-right");
-         //$(".col-md-6.right_text_about").addClass("effect-right-text-about");
-      //console.log($(window).offset().top);
-     
-  }*/
+  var height_roadmap=$("#roadmap").outerHeight();
+  //console.log('rd='+pos_roadmap);
+  var p=pos_roadmap-389;
+ if(pos_body>=p){
  var n;
- n=parseInt((pos_body-p)/63)+1;
- if(n%2==0)
+ n=parseInt((pos_body-p)/72)+1;
+if(n%2==0)
    $("#roadmap li:nth-child("+n+")").addClass("effect-roadmap-right");
  else   $("#roadmap li:nth-child("+n+")").addClass("effect-roadmap-left");
- console.log("n="+n+"/body="+pos_body);
-         
-         //$(".col-md-6.right_text_about").addClass("effect-right-text-about");
-      /*console.log("lon roi nhe");
-      for (var i=p;i<=pos_roadmap;i=i+63){
-        console.log("i="+i+"=== pos_body"+pos_body)
-         if(pos_body==i){
-          if(child%2==0)
-            $("#roadmap:nth-child("+child+")").addClass("effect-roadmap-right");
-            else $(".bonus").addClass("effect-roadmap-left");
-            child++;
-         }
-      }*/
+// console.log("con thu n="+n+"/body="+pos_body);
      
-  
+  }
+  var pos_team=$("#team").offset().top;
+   pos_team=pos_team-274;//vi tri co dinh
+   var m,screen_w,chr;
 
+   screen_w=$( window ).outerWidth();
+   if(pos_body>=pos_team){
+         m=parseInt((pos_body-pos_team)/317)+1;
+         console.log("m="+m+"/body="+pos_body+"/pos_team="+pos_team);
+         if(screen_w<=600){
+            $(".col-4:nth-of-type("+m+")").addClass('bubble');
+         }
+         else if(screen_w<=1100){
+            $(".col-4:nth-of-type("+(2*m-1)+")").addClass('bubble');
+            $(".col-4:nth-of-type("+((2*m-1)+1)+")").addClass('bubble');
+         }
+         else
+          {
+            $(".col-4:nth-of-type("+(3*m-2)+")").addClass('bubble');
+            $(".col-4:nth-of-type("+((3*m-2)+1)+")").addClass('bubble');
+            $(".col-4:nth-of-type("+((3*m-2)+2)+")").addClass('bubble');
+         }
+       }
+     
+   
+   console.log($( window ).outerWidth());
+   //console.log("team="+pos_team);
+    // if(pos_body>=p){
+     //  var m;
+      // m=parseInt((pos_body-pos_team)/72)+1;
+      /*if(n%2==0)
+         $("#roadmap li:nth-child("+n+")").addClass("effect-roadmap-right");
+       else   $("#roadmap li:nth-child("+n+")").addClass("effect-roadmap-left");
+       console.log("con thu n="+n+"/body="+pos_body);
+           
+  }
+     if(pos_body>=pos_team){
+         //$("#team").addClass("bubble");
+         $(".col-4").addClass("bubble");
+     
+  }*/
 
+//scroll to charts
+  /*var pos_chart=$(".charts").offset().top;
+   console.log(pos_body+"/"+pos_chart);
+   pos_chart=pos_chart-288;
+     
+    if(pos_body>=pos_chart){
+         //pie();
+         if($(".pie-chart").hasClass('show-chart')){
+          $(window).one('scroll',function(){
+          pie();
+    });
+         
+        //  console.log("yes");
+        // $(".pie-chart").removeClass('show-chart');
+      }
+
+         //$(".col-md-6.right_text_about").addClass("effect-right-text-about");
+      //console.log("lon roi nhe");
+     
+  }
+*/
 
    });
+   $(window).one('scroll',function() {
+   // Stuff
+});
 
    //hieu ung menu truot
    //bat dang nhap su kien
@@ -157,7 +203,8 @@ $(function(){
      }
      ]
    });*/
-   var chart = new CanvasJS.Chart("chartContainer", {
+  
+      var chart = new CanvasJS.Chart("chartContainer", {
   colorSet: "colorChart",
   animationEnabled: true,
   title:{
@@ -178,8 +225,11 @@ $(function(){
     ]
   }]
 });
-
-    chart.render();
+chart.render();
+//$(".pie-chart").removeClass('show-chart');
+  
+   
+   
   
                 
     //slideshow flag

@@ -62,6 +62,8 @@
 <link rel="stylesheet" href="css/register.css">
 <link rel="stylesheet" href="css/effect.css">
 <link rel="stylesheet" href="css/chart.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
 
  
 
@@ -71,6 +73,10 @@
        .flip-clock-divider .flip-clock-label {
     
     color: #ffffff;
+}
+.fa{margin-top:10px;}
+.text-center {
+    text-align: center !important;
 }
    </style>
 
@@ -163,9 +169,9 @@ jQuery(document).ready(function(){
    
     <div class="footer_top_bg">
         <div class="wrap">
-            <div class="footer_top">
+            <!-- <div class="footer_top">
                 <h2 style="color:#060">This is what everyone wants. its free for limited time WBANKCOIN</h2>
-            </div>
+            </div> -->
         </div>
     </div>
     <style>
@@ -229,7 +235,13 @@ jQuery(document).ready(function(){
     </style>
 
         
-    <?php include _template."popup_tpl.php";?> 
+    <?php //include _template."popup_tpl.php";?> 
+     <?php include _template."ourteam_tpl.php";?> 
+      <?php include _template."lending_tpl.php";?> 
+    <div class="footer">
+       <?php include _template."footer_tpl.php";?> 
+    </div>
+      
     <!-- / footer  -->
 <?php }?>
 

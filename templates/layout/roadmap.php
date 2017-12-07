@@ -57,5 +57,28 @@
 
 
 
+
+
+
+<li>
+<h3> <span>Target price</span> <span>(12/01/2018)</span> </h3>
+<p><span>Target price achievement $200 USD/BBC</span></p>
+</li>
+<li>
+<h3> <span>Target price</span> <span>(12/01/2018)</span> </h3>
+<p><span>Target price achievement $200 USD/BBC</span></p>
+</li>
+<li>
+<h3> <span>Target price</span> <span>(12/01/2018)</span> </h3>
+<p><span>Target price achievement $200 USD/BBC</span></p>
+</li>
+<li>
+<h3> <span>Target price</span> <span>(12/01/2018)</span> </h3>
+<p><span>Target price achievement $200 USD/BBC</span></p>
+</li>
+<li>
+<h3> <span>Target price</span> <span>(12/01/2018)</span> </h3>
+<p><span>Target price achievement $200 USD/BBC</span></p>
+</li>
 </ul>
 </section>
