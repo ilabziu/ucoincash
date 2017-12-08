@@ -82,8 +82,11 @@
 
 <!--end slider -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/effect.js"></script>
+<?php if($com!="account" ){
+echo '<script type="text/javascript" src="js/effect.js"></script>';
+}?>
 <script type="text/javascript" src="js/jquery-hover-effect.js"></script>
+<script type="text/javascript" src="js/country.js"></script>
 <script type="text/javascript">
 //Image Hover
 jQuery(document).ready(function(){
@@ -144,6 +147,8 @@ jQuery(document).ready(function(){
  <?php if($com=="account" ){
 	 
      include _template."register_tpl.php";
+     include _template."country_tpl.php";
+
 	 
  } else{?>
  
@@ -230,9 +235,26 @@ jQuery(document).ready(function(){
     background-color: rgba(59,59,59,0.9);
 }
 }
+/*de chong clock*/
+.flip-clock-wrapper ul li a div div.inn{padding: 0;}
+@media (max-width: 425px)
+{.flip-clock-wrapper ul li {
+    line-height: 55px;
+}
+}
+@media screen and (max-width: 700px){
+.flip-clock-wrapper {
+ 
+    padding-left: 13px!important;
+}
+}
+/* .flip-clock-wrapper {
+    
+   width: 120%; 
 
-
+} */
     </style>
+
 
         
     <?php //include _template."popup_tpl.php";?> 

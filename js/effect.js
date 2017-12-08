@@ -271,6 +271,5 @@ chart.render();
      $(".navbar-collapse.collapse").slideToggle("slow")
     });
    
-
-
+   
 });

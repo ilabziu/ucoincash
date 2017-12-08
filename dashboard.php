@@ -141,12 +141,13 @@ jQuery(document).ready(function(){
 <script src="js/flipclock.min.js"></script>    
 
   <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/country.js"></script>
  
   
 
 </head>
 <body class="index-page has-active-menu">
-
+ <?php include _template."country_tpl.php";?>
      
      
      

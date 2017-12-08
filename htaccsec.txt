@@ -1,0 +1,42 @@
+RewriteEngine on
+
+Options All -Indexes
+DirectoryIndex index.php index.htm
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+
+<files config.php>
+order allow,deny
+deny from all
+</files>
+
+<files .htaccess>
+order allow,deny
+deny from all
+</files>
+
+ErrorDocument 500 /index.php
+
+ErrorDocument 404 /index.php
+
+ErrorDocument 401 /index.php
+
+ErrorDocument 403 /index.php
+
+
+RewriteRule ^Home/([a-zA-Z0-9_-]+).html$ dashboard.php?com=$1&tam=$2 [L]
+RewriteRule ^ref/([a-zA-Z0-9_-]+)$ index.php?com=account&tam=sign-up&user=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+).html/p=([0-9]+)$ index.php?com=$1&p=$2  [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php?com=$1  [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ index.php?com=$1&tam=$2  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ index.php?com=$1&tam=$2&token=$3  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ index.php?com=$3&tam=$4  [L]
+
+
+
+

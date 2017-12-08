@@ -235,9 +235,9 @@
         color: #202020;
     }
 
-    .flip-clock-wrapper {
-        margin: 10px 0px 0px !important;
-    }
+   /*  .flip-clock-wrapper {
+       margin: 10px 0px 0px !important;
+   } */
 
 
 
@@ -251,9 +251,9 @@
         display: table;
     }
 
-    .flip-clock-divider {
+    /* .flip-clock-divider {
         height: 80px !important;
-    }
+    } */
 
     .ico-title-time img, .buy-ico-title-time img {
         width: 30px;
@@ -306,8 +306,8 @@
         z-index: 10;
         opacity: 0;
     }
-
-    ul.flip {
+    
+    /*ul.flip {
         position: relative;
         float: left;
         margin: 10px 6px;
@@ -318,9 +318,9 @@
         font-weight: bold;
         line-height: 83px;
         border: 1px solid #7e7e80;
-    }
-
-        ul.flip li {
+    }*/
+    
+     /*   ul.flip li {
             float: left;
             margin: 0;
             padding: 0;
@@ -328,12 +328,12 @@
             height: 100%;
             -webkit-perspective: 200px;
             list-style: none;
-        }
-
+        }*/
+    
             ul.flip li.d1 {
                 float: right;
             }
-
+    
             ul.flip li section {
                 z-index: 1;
                 position: absolute;
@@ -342,11 +342,11 @@
                 width: 100%;
                 height: 100%;
             }
-
+    
                 ul.flip li section:first-child {
                     z-index: 2;
                 }
-
+    
             ul.flip li div {
                 z-index: 1;
                 position: absolute;
@@ -355,7 +355,7 @@
                 height: 49.3%;
                 overflow: hidden;
             }
-
+    
                 ul.flip li div .shadow {
                     display: block;
                     position: absolute;
@@ -363,18 +363,18 @@
                     height: 100%;
                     z-index: 2;
                 }
-
+    
                 ul.flip li div.up {
                     -webkit-transform-origin: 50% 100%;
                     top: 0;
                 }
-
+    
                 ul.flip li div.down {
                     -webkit-transform-origin: 50% 0%;
                     bottom: 0;
                     height: 50%;
                 }
-
+    
     .flip-clock-wrapper .flip:before {
         content: "";
         width: 100%;
@@ -383,7 +383,7 @@
         display: block;
         top: 35px;
         z-index: 10000;
-    }
+    } 
 
     #flipclock-container ul:nth-child(11) li:nth-child(2)::before,
     #flipclock-container ul:nth-child(8) li:nth-child(2)::before,
@@ -541,7 +541,9 @@
 
             <h4 class="buy-ico-title-time"><img src="./Buy ICO_files/time-buy-ico.png">BUY ICO TIME: </h4>
             <div class="flip-clock-controller">
-                <div id="buy--ico--time" class="clock timers flip-clock-wrapper"><span class="flip-clock-divider days"><span class="flip-clock-label">Days</span></span><ul class="flip "><li class="flip-clock-before"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">9</div></div><div class="down"><div class="shadow"></div><div class="inn">9</div></div></a></li><li class="flip-clock-active"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li class="flip-clock-active"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li></ul><span class="flip-clock-divider hours"><span class="flip-clock-label">Hours</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li class="flip-clock-active"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li class="flip-clock-active"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li></ul><span class="flip-clock-divider minutes"><span class="flip-clock-label">Minutes</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip "><li class="flip-clock-before"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li class="flip-clock-active"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">3</div></div><div class="down"><div class="shadow"></div><div class="inn">3</div></div></a></li></ul><ul class="flip "><li class="flip-clock-before"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">0</div></div><div class="down"><div class="shadow"></div><div class="inn">0</div></div></a></li><li class="flip-clock-active"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul><span class="flip-clock-divider seconds"><span class="flip-clock-label">Seconds</span><span class="flip-clock-dot top"></span><span class="flip-clock-dot bottom"></span></span><ul class="flip  play"><li class="flip-clock-before"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">2</div></div><div class="down"><div class="shadow"></div><div class="inn">2</div></div></a></li><li class="flip-clock-active"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">1</div></div><div class="down"><div class="shadow"></div><div class="inn">1</div></div></a></li></ul><ul class="flip  play"><li class="flip-clock-before"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">6</div></div><div class="down"><div class="shadow"></div><div class="inn">6</div></div></a></li><li class="flip-clock-active"><a href="https://ucoincash.co/ICO/Buy#"><div class="up"><div class="shadow"></div><div class="inn">5</div></div><div class="down"><div class="shadow"></div><div class="inn">5</div></div></a></li></ul></div>
+                <div id="buy--ico--time" class="clock timers flip-clock-wrapper">
+
+                </div>
             </div>
         
 

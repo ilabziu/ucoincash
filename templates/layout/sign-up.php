@@ -93,7 +93,7 @@
                 <div class="div-msg-warn-item">
                 </div>
                 <div class="input-group">
-                    <span class="input-group-addon" onclick="openFlags()">
+                    <span class="input-group-addon">
                         <img class="sign-ico" id="img-flag-identity" data-value="US" src="images/flag-of-Vietnam.png">
                     </span>
                     <input type="text" name="PhoneNumber" value="" placeholder="Phone number" class="form-control">
